@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="32372Lemonware.PianoForBeginners" Version="1.1.0.0" Publisher="CN=595E4D8C-E8A9-47E7-B1F4-1ADAEDB84FFD" />
+  <Properties>
+    <DisplayName>Piano 4 Beginners</DisplayName>
+    <PublisherDisplayName>Lemonware</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Piano 4 Beginners" Description="Piano 4 Beginners for Windows 8.1" ForegroundText="light" BackgroundColor="#000000" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+        <m2:DefaultTile Square310x310Logo="images\Square310x310Logo.jpg" Square70x70Logo="images\Square70x70Logo.png" ShortName="Rock It Out!" Wide310x150Logo="images\Wide310x150Logo.png">
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="#000000" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="landscapeFlipped" />
+        </m2:InitialRotationPreference>
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+</Package>

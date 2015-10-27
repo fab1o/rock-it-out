@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Piano_Game</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- Piano_Game references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/jquery-2.0.0.min.js"></script>
+</head>
+<body>
+
+    <div id="c2canvasdiv" style="width: 1858px; height: 548px; margin-left: 0px; margin-top: 0px;">
+
+        <canvas id="c2canvas" width="1858" height="548" style="width: 1858px; height: 548px;">
+        </canvas>
+
+    </div>
+
+    <script src="/js/c2runtime.js"></script>
+    <script>
+        // Size the canvas to fill the browser viewport.
+
+        jQuery(window).resize(function () {
+            cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+        });
+
+        
+        WinJS.UI.processAll().then(function () {
+            // Start the Construct 2 project running on window load.
+            ///jQuery(document).ready(function () {
+                // Create new runtime using the c2canvas
+                cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+
+                cr_createRuntime("c2canvas");
+            //});
+
+        });
+
+        //// Pause and resume on page becoming visible/invisible
+        //function onVisibilityChanged() {
+        //    if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+        //        cr_setSuspended(true);
+        //    else
+        //        cr_setSuspended(false);
+        //};
+
+        //document.addEventListener("visibilitychange", onVisibilityChanged, false);
+        //document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+        //document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+        //document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+    </script>
+
+</body>
+</html>

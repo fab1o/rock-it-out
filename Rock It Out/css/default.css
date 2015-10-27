@@ -1,0 +1,20 @@
+﻿@font-face {
+  font-family: 'punkkid';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/punk kid.ttf');
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #000;
+	color: #fff;
+	overflow: hidden;
+	-ms-touch-action: none;
+}
+canvas {
+	-ms-touch-action: none;
+}
+    
